@@ -1,4 +1,20 @@
 createGrid(4);
+document.querySelector(".grid-size").addEventListener("click", showPopUp);
+document
+  .querySelector(".change-size")
+  .addEventListener("click", changeGridSize);
+const popup = document.querySelector(".popup-form");
+const gridSize = document.querySelector(".grid-size");
+
+popup.style.display = "none";
+
+gridSize.addEventListener("click", showPopUp);
+
+function showPopUp() {
+  console.log(popup.style.display);
+  popup.style.display = popup.style.display === "none" ? "flex" : "none";
+}
+
 function createGrid(size) {
   const grids = document.querySelector(".grids");
   grids.innerHTML = "";
@@ -13,13 +29,6 @@ function createGrid(size) {
     grids.appendChild(gridContainer);
   }
 }
-
-document.querySelector(".grid-size").addEventListener("click", showPopUp);
-document
-  .querySelector(".change-size")
-  .addEventListener("click", changeGridSize);
-
-function showPopUp() {}
 
 function changeGridSize() {
   const newSize = document.querySelector("#new-size").value;
