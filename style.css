@@ -4,17 +4,58 @@ body{
     width: 100vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+.popup-form{
+    display: flex;
+    flex-shrink: 0;
+    flex: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.form-head{
+    
+}
+
+.form-body{
+    display: flex;
+    justify-content: center ;
+}
+
+.form-body > input{
+    border: 2px solid black;
+    width: 16px;
+    aspect-ratio: 1;
+}
+
+.grids{
+    margin: 0;
+    height: 100vh;
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid blue;
 }
 
 .grid-container{
     display: flex;
-    aspect-ratio: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .grid{
-    aspect-ratio: 1;
-    background-color: white;
-    transition: background-color cubic-bezier(0, 0.52, 1, 1) 1s;
+    width: 100%;
+    height: 100%;
+    transition: background-color cubic-bezier(0, 0.52, 1, 1) 2s;
 }
 
 .grid:hover{
