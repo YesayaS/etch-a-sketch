@@ -1,0 +1,19 @@
+*{
+    border: 1px solid red;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.grid-container{
+    display: flex;
+    aspect-ratio: 1;
+}
+
+.grid{
+    aspect-ratio: 1;
+}
