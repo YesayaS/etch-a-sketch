@@ -31,7 +31,10 @@ function createGrid(size) {
 }
 
 function changeGridSize() {
-  const newSize = document.querySelector("#new-size").value;
+  let newSize = document.querySelector("#new-size").value;
+  if (newSize > 100) {
+    newSize = 100;
+  }
   if (newSize !== "") {
     createGrid(newSize);
   }
